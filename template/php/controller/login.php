@@ -54,10 +54,18 @@ if (mysql_affected_rows()==0) {
 		// -- Redirect to application home, friendly slug /home, /dashboard etc
 		// Normal login, no refer URL jump
 		if($referURL==""){
-			echo '<script type="text/javascript">window.location="'.$Link_Home.'"</script>';
+			echo '
+					<script type="text/javascript">
+						window.location="'.$Link_Home.'"
+					</script>
+				';
 		} else {
 			// -- If the refer URL exists
-			echo '<script type="text/javascript">window.location="'.$referURL.'&loginFrom=ReferURL"</script>';
+			echo '
+					<script type="text/javascript">
+						window.location="'.$referURL.'&loginFrom=ReferURL"
+					</script>
+			';
 		}
 }
 ?>

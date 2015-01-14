@@ -27,6 +27,9 @@ session_unset();
 
 // REDIRECT VIA ECHO
 // -- URL of redirected logout
-echo '<script type="text/javascript">window.location="'.$appURL.'?msg=logout&clear_bird='.rand().'&hash='.sha1(rand).'"</script>'
+echo '
+<script type="text/javascript">
+window.location="'.$appURL.'?msg=logout&clear_bird='.rand().'&hash='.sha1(rand).'"
+</script>'
 
 ?>

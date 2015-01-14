@@ -11,16 +11,16 @@
 ***/
 
 // LIBRARY
-include("inc/c.php");
-if(is_customer_logged_in()){} else {header('Location: '.$appURL.'?ref='.$_SERVER['REQUEST_URI'].'');}
+	include("inc/c.php");
+	if(is_customer_logged_in()){} else {header('Location: '.$appURL.'?ref='.$_SERVER['REQUEST_URI'].'');}
 
 // VARS
-$pageNameStripped = mysql_real_escape_string($_GET["page"]);
-$pageName = clean($pageNameStripped);
-include("".$appDir."template/php/controller/pages/".$pageName.".php");
+	$pageNameStripped = mysql_real_escape_string($_GET["page"]);
+	$pageName = clean($pageNameStripped);
+	include("".$appDir."template/php/controller/pages/".$pageName.".php");
 
 // FUNCTIONS
-tracker_page_clicking($_SESSION["userID"], $datec, $ipc, ucfirst($pageName));
+	tracker_page_clicking($_SESSION["userID"], $datec, $ipc, ucfirst($pageName));
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +38,7 @@ tracker_page_clicking($_SESSION["userID"], $datec, $ipc, ucfirst($pageName));
 
 <div class="container">
 	<div class="row">
-		<div class="hawkPage" data-page="<?=$pageName?>" id="HawkPage-<?=$hawkPageSession?>-Off" ng-view>
+		<div class="hawkPage" data-page="<?=$pageName?>" id="HawkPage-<?=$hawkPageSession?>-off" ng-view>
 		<? include("".$appDir."template/php/view/pages/".$pageName.".php"); ?>
 		</div>
 	</div>
