@@ -1,0 +1,46 @@
+body{padding-top:40px;padding-bottom:40px}
+.form-signin{max-width:330px;padding:15px;margin:0 auto}
+.form-signin .form-signin-heading,.form-signin .checkbox{margin-bottom:10px}
+.form-signin .checkbox{font-weight:normal}
+.form-signin .form-control{position:relative;height:auto;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:10px;font-size:16px}
+.form-signin .form-control:focus{z-index:2}
+.form-signin input[type="email"]{margin-bottom:-1px;border-bottom-right-radius:0;border-bottom-left-radius:0}
+.form-signin input[type="password"]{margin-bottom:10px;border-top-left-radius:0;border-top-right-radius:0}
+.errorformapps{border:3px solid #cc0000 !important}
+.full{width:100%}
+.fullh{width:90%}
+.logout{color:#f30 !important}
+.main_login_hawk{font-weight:bold;color:#222}
+.hawkPage{background:#fff;border-radius:3px;margin-top:25px;padding:15px}
+th{text-transform:uppercase;text-align:center}
+tr, tr td{text-align:center}
+small,small a{color:#999 !important}
+a{color:#2f6ea5}
+.HAWKLOGO{animation:bounce .9s infinite alternate;-webkit-animation:bounce .9s infinite alternate}
+@keyframes bounce{from{transform:translateY(-3px)}to{transform:translateY(0)}}
+@-webkit-keyframes bounce{from{-webkit-transform:translateY(-3px)}to{-webkit-transform:translateY(0)}}
+.navbar{border:0}
+.nav > li:hover, .nav > li a:hover{background:#E4E4E4}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{background:#eaeaea}
+.navbar-fixed-top, .navbar-fixed-bottom{z-index:9999}
+/*
+Wings Builder 1.0.0() TODO Wings
+-- HTML Builder for emails
+*/
+.builder_body{width:100%;margin:0 auto;display:block;min-height:500px}
+.builder_body_div{width:600px;margin:0 auto}
+.builder_body #backgroundTable,.builder_body #deliveryTable,.builder_body #headerTable,.builder_body #footerTable,.builder_body #brandsTable{line-height:100% !important;margin:0;padding:0;width:100% !important}
+.cog-left{display:block;text-align:left;width:75px}
+.cog-right{display:block;text-align:right;width:75px}
+.edit_wrapper-top{position:absolute;z-index:99999999}
+.edit_wrapper{position:absolute;z-index:900010}
+.wrapper_form{width:225px;height:150px;background:#fff;display:none;color:#000;border-radius:5px}
+.wrapper_form select, .wrapper_form input{color:#555 !important;border:2.5px solid #777;border-radius:3px;width:95%}
+.contentCreatorButton{margin-bottom:3px;margin-top:3px;border-radius:0;border-style:dashed}
+.hawkEmailContentRowBlockTrue{position:absolute;top:0;left:0;width:100%;height:100%;z-index:900000}
+.hawkEmailContentRowBlockTrue:hover{background:url(../imgs/cross.png);border:1.5px dashed #EB9214}
+.hawkEmailContentRowBlock:hover{border:1.5px dashed #EB9214}
+.hawkEmailContentRowBlock{position:relative;height:100%;width:100%}
+.firstTableWrapper{position:relative}
+.btn{margin:3px}
+.rx{display:none}

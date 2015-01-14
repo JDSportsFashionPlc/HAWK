@@ -11,6 +11,20 @@
 *.o
 *.so
 
+.DS_Store
+.DS_Store?
+_notes/
+_originals/
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+dwsync.xml
+/inc/c.php
+c.php
+/Hello.class
+
 *.7z
 *.dmg
 *.gz
