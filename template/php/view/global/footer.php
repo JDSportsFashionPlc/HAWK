@@ -1,5 +1,5 @@
 <footer>
 	<center>
-		HAWK - JD Systems
+		HAWK 7 - JD Systems
 	</center>
 </footer>
