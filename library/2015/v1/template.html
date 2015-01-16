@@ -176,7 +176,7 @@ table.two center { min-width: 80px; }
 table.three center { min-width: 130px; }
 table.four center { min-width: 180px; }
 table.five center { min-width: 230px; }
-table.six center { min-width: 280px; }
+table.six center { min-width: 600px; }
 table.seven center { min-width: 330px; }
 table.eight center { min-width: 380px; }
 table.nine center { min-width: 430px; }
@@ -368,10 +368,7 @@ small {
   font-size: 10px;
 }
 
-/* JD re-writes*/
 
-.top-nav-links{font-weight:normal;margin:0 5px;text-decoration:none;color:#fff;font-size:13.9px;letter-spacing:1.3px}
-.delivery-link{color:#fff}
 
 /*
 a {
@@ -602,7 +599,7 @@ body.outlook p {
 
 /*  Media Queries */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
 
   table[class="body"] img {
     width: auto !important;
@@ -614,12 +611,12 @@ body.outlook p {
   }
 
   table[class="body"] .container {
-    width: 95% !important;
+    width: 90% !important;
   }
 
   table[class="body"] .row {
     width: 100% !important;
-    display: block !important;
+    /*display: block !important;*/
   }
 
   table[class="body"] .wrapper {
@@ -634,7 +631,7 @@ body.outlook p {
     width: 100% !important;
     padding-right: 0px !important;
     padding-left: 0px !important;
-    display: block !important;
+    /*display: block !important;*/
   }
 
   table[class="body"] .wrapper.first .columns,
@@ -777,7 +774,7 @@ body.outlook p {
       padding-right: 10px;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 750px) {
 
       table[class="body"] .right-text-pad {
         padding-left: 10px !important;
@@ -787,6 +784,29 @@ body.outlook p {
         padding-right: 10px !important;
       }
     }
+	 
+/*
+JD re-writes
+*/
+.top-nav-links{font-weight:normal;margin:0 5px;text-decoration:none;color:#fff;font-size:13.9px;letter-spacing:1.3px}
+.delivery-link{color:#fff}
+.no-spacing-gaps-between-tables,
+.no-spacing-gaps-between-tables td{padding:0px !important}
+.half-column-expand{width:300px;padding:0px !important}
+.half-column-expand img{width:300px}
+/*
+2x2 fix
+*/
+.six-fix img{width:100% !important}
+table.container-fix {text-align: inherit;width: 600px;margin-left:-19px;}
+@media only screen and (max-width: 750px) {
+.six-fix td{width:50% !important;height:50% !important}
+.half-column-expand{width:100%  !important}
+.half-column-expand img{width:100% !important}
+table.container-fix{width:90%;margin:0 auto !important}
+}
+.container-split{width:580px}
+
 
   </style>
 </head>
@@ -900,7 +920,7 @@ body.outlook p {
                 <center>
                   <table class="container">
                     <tr>
-                      <td class="wrapper last">
+                      <td class="wrapper">
                         <table class="twelve columns">
                           <tr>
                             <td>
@@ -937,7 +957,7 @@ body.outlook p {
                 <center>
                   <table class="container">
                     <tr>
-                      <td class="wrapper last">
+                      <td class="wrapper">
                         <table class="twelve columns">
                           <tr>
                             <td>
@@ -956,8 +976,98 @@ body.outlook p {
               </td>
             </tr>
           </table>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          	<!-- 2x2 Inset Images -->
+            <table class="row">
+               <tr>
+                  <td class="center" align="center">
+                  <center>
+                  <table class="container-fix">
+                  	<tr>
+                           <td>
+                              <table class="six-fix">
+                                 <tr>
+                                    <td width="300"><a href=""><img src="http://placehold.it/300x300" style="width:100% !important"/></a></td>
+                                    <td width="300"><a href=""><img src="http://placehold.it/300x300" style="width:100% !important"/></a>   </td>
+                                 </tr>
+                              </table>
+                           </td>                  
+                  	</tr>
+                  </table>
+                  </center>
+                  </td>
+               </tr>
+            </table>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          <!-- 1x1 Campaign Imagery -->
+          <table class="row">
+            <tr>
+              <td class="center" align="center">
+                <center>
+                  <table class="container">
+                    <tr>
+                      <td class="wrapper">
+                      <!--
+                      EDIT - bgcolor
+                      -->
+                        <table class="twelve columns" bgcolor="#413D3D">
+                          <tr>
+                            <td>
+                            	<center>
+                                 <a href="">
+                                 	<img src="http://placehold.it/600x600"/>
+                                 </a>
+                              </center>
+                            </td>               
+                          </tr>
+                        </table>
+                        <table class="twelve columns" bgcolor="#413D3D">
+                          <tr>
+                            <td>
+                            	<center>
+                                 <strong></strong>
+                                 <br />
+                                 
+                              </center>
+                            </td>               
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </center>
+              </td>
+            </tr>
+          </table>
           <br>
-          <br>
+          
+          
+          
+          
+          
+          
+          
+          
+          
           
           
           
