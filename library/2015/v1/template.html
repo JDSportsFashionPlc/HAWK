@@ -739,51 +739,64 @@ body.outlook p {
     }
 
     .template-label {
-      color: #ffffff;
-      font-weight: bold;
-      font-size: 11px;
+      color:#fff;
+      font-weight:bold;
+      font-size:11px;
     }
 
     .callout .panel {
-      background: #ECF8FF;
-      border-color: #b9e5ff;
+      background:#ecf8ff;
+      border-color:#b9e5ff;
     }
 
     .header {
-      background: #999999;
+      background:#999;
     }
 
     .footer .wrapper {
-      background: #ebebeb;
+      background:#ebebeb;
     }
 
     .footer h5 {
-      padding-bottom: 10px;
+      padding-bottom:10px;
     }
 
     table.columns .text-pad {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left:10px;
+      padding-right:10px;
     }
 
     table.columns .left-text-pad {
-      padding-left: 10px;
+      padding-left:10px;
     }
 
     table.columns .right-text-pad {
-      padding-right: 10px;
+      padding-right:10px;
     }
 
     @media only screen and (max-width: 750px) {
 
       table[class="body"] .right-text-pad {
-        padding-left: 10px !important;
+        padding-left:10px !important;
       }
-
       table[class="body"] .left-text-pad {
-        padding-right: 10px !important;
+        padding-right:10px !important;
       }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	 
 /*
 JD re-writes
@@ -798,12 +811,12 @@ JD re-writes
 2x2 fix
 */
 .six-fix img{width:100% !important}
-table.container-fix {text-align: inherit;width: 600px;margin-left:-19px;}
+table.container-fix{text-align:inherit;margin-bottom:11px/*width:600px;margin-left:-19px*/}
 @media only screen and (max-width: 750px) {
 .six-fix td{width:50% !important;height:50% !important}
-.half-column-expand{width:100%  !important}
+.half-column-expand{width:100% !important}
 .half-column-expand img{width:100% !important}
-table.container-fix{width:90%;margin:0 auto !important}
+table.container-fix{width:90%/*;margin:0 auto !important*/}
 }
 .container-split{width:580px}
 
@@ -817,6 +830,11 @@ table.container-fix{width:90%;margin:0 auto !important}
         <center>
 
 
+          
+        
+          
+          
+          
           
           
           
@@ -993,11 +1011,11 @@ table.container-fix{width:90%;margin:0 auto !important}
                   <center>
                   <table class="container-fix">
                   	<tr>
-                           <td>
+                           <td class="wrapper">
                               <table class="six-fix">
                                  <tr>
-                                    <td width="300"><a href=""><img src="http://placehold.it/300x300" style="width:100% !important"/></a></td>
-                                    <td width="300"><a href=""><img src="http://placehold.it/300x300" style="width:100% !important"/></a>   </td>
+                                    <td width="300"><a href=""><img src="http://placehold.it/300x300?x=1" style="width:100% !important"/></a></td>
+                                    <td width="300"><a href=""><img src="http://placehold.it/300x300?x=1" style="width:100% !important"/></a>   </td>
                                  </tr>
                               </table>
                            </td>                  
@@ -1018,7 +1036,7 @@ table.container-fix{width:90%;margin:0 auto !important}
             
             
             
-          <!-- 1x1 Campaign Imagery -->
+          <!-- 1x1 Campaign Imagery with Campaign Text -->
           <table class="row">
             <tr>
               <td class="center" align="center">
@@ -1026,10 +1044,7 @@ table.container-fix{width:90%;margin:0 auto !important}
                   <table class="container">
                     <tr>
                       <td class="wrapper">
-                      <!--
-                      EDIT - bgcolor
-                      -->
-                        <table class="twelve columns" bgcolor="#413D3D">
+                        <table class="twelve columns">
                           <tr>
                             <td>
                             	<center>
@@ -1037,18 +1052,18 @@ table.container-fix{width:90%;margin:0 auto !important}
                                  	<img src="http://placehold.it/600x600"/>
                                  </a>
                               </center>
-                            </td>           
+                            </td>               
                           </tr>
                           <tr>
-                            <td bgcolor="#413D3D" height="75">
-                            	<br />
-                              <center>
-                                 <span style="color:#EAB507">
-                                    <strong>THE NIKE NEW HUARACHE 2015 SERIES</strong>
-                                    <br />Exclusive to JD Sports
-                                 </span>
-                              </center>
-                            </td>               
+                          	<td bgcolor="#adadad" style="padding:11px 0">
+                           <center>
+                           	<span>
+                              	<strong>BRAND NAME</strong><br />
+                                 Product Name<br />
+                                 &pound;20.00
+                              </span>
+                           </center>
+                           </td>
                           </tr>
                         </table>
                       </td>
@@ -1058,201 +1073,267 @@ table.container-fix{width:90%;margin:0 auto !important}
               </td>
             </tr>
           </table>
-          <br>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
 
-          <table class="container">
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 2x2 Headline Images -->
+            <table class="row">
+               <tr>
+                  <td class="center" align="center">
+                  <center>
+                  <table class="container">
+                    <tr>
+                           <td class="wrapper">
+                              <table class="six-fix" bgcolor="#ddd">
+                                <tr>
+                                  <td colspan="2" style="padding:11px 0">
+                                    <h2><center><strong>HEADLINE</strong></center></h2>
+                                  </td>
+                                </tr>
+                                 <tr>
+                                   <td colspan="2" style="padding:11px 0">
+                                      <table width="90%" align="center">
+                                        <tr>
+                                          <td width="275">
+                                            <center>
+                                              <a href="#"><img src="http://placehold.it/265x265?x=1" style="width:95% !important"/></a>
+                                              <br /><br />
+                                              <strong>BRAND NAME</strong><br />
+                                              Product Name<br />
+                                              &pound;20.00
+                                            </center>
+                                          </td>
+                                          <td width="275">
+                                            <center>
+                                              <a href="#"><img src="http://placehold.it/265x265?x=1" style="width:95% !important"/></a>
+                                              <br /><br />
+                                              <strong>BRAND NAME</strong><br />
+                                              Product Name<br />
+                                              &pound;20.00
+                                            </center>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>                  
+                    </tr>
+                  </table>
+                  </center>
+                  </td>
+               </tr>
+            </table>          
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 2x4 Campaign Headline Images (Fluid Continous boxed content) -->
+            <table class="row">
+               <tr>
+                  <td class="center" align="center">
+                  <center>
+                  <table class="container">
+                    <tr>
+                           <td class="wrapper">
+                              <table class="six-fix" bgcolor="#ddd">
+                                <tr>
+                                  <td colspan="2">
+                                    <a href="#"><img src="http://placehold.it/600x300?x=1" style="width:100% !important"/></a>
+                                  </td>
+                                </tr>
+                                 <tr>
+                                   <td colspan="2" style="padding:11px 0">
+                                      <br />
+                                      <table width="90%" align="center">
+                                        <tr>
+                                          <td width="275">
+                                            <center>
+                                              <a href="#"><img src="http://placehold.it/265x265?x=1" style="width:95% !important"/></a>
+                                              <br /><br />
+                                              <strong>BRAND NAME</strong><br />
+                                              Product Name<br />
+                                              &pound;20.00
+                                            </center>
+                                          </td>
+                                          <td width="275">
+                                            <center>
+                                              <a href="#"><img src="http://placehold.it/265x265?x=1" style="width:95% !important"/></a>
+                                              <br /><br />
+                                              <strong>BRAND NAME</strong><br />
+                                              Product Name<br />
+                                              &pound;20.00
+                                            </center>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <br />
+                                      <table width="90%" align="center">
+                                        <tr>
+                                          <td width="275">
+                                            <center>
+                                              <a href="#"><img src="http://placehold.it/265x265?x=1" style="width:95% !important"/></a>
+                                              <br /><br />
+                                              <strong>BRAND NAME</strong><br />
+                                              Product Name<br />
+                                              Only at JD<br />
+                                              &pound;20.00
+                                            </center>
+                                          </td>
+                                          <td width="275">
+                                            <center>
+                                              <a href="#"><img src="http://placehold.it/265x265?x=1" style="width:95% !important"/></a>
+                                              <br /><br />
+                                              <strong>BRAND NAME</strong><br />
+                                              Product Name<br />
+                                              Only at JD<br />
+                                              &pound;20.00
+                                            </center>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <br />
+                                    </td>
+                                 </tr>
+                              </table>
+                           </td>                  
+                    </tr>
+                  </table>
+                  </center>
+                  </td>
+               </tr>
+            </table> 
+            <br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-- Footer Find your nearest store and social icon feed -->
+          <table class="row" style="background:#333;color:#fff">
             <tr>
-              <td>
+              <td class="center" align="center">
+                <center>
+                  <table class="container">
+                    <tr>
+                      <td class="wrapper last">
+                        <table class="twelve columns">
+                          <tr>
+                            <td class="six sub-columns" style="text-align:left;vertical-align:middle;padding:11px 0">
+                              <a href="#" style="text-decoration:none;border:0;color:#fff">
+                              <strong>FIND YOUR NEAREST STORE</strong></a>                              
+                            </td>
+                            <td class="six sub-columns last" align="right" style="text-align:right;vertical-align:middle;padding:11px 0">
+                              <span class="template-label">
+                              <a href="" class="top-nav-links"
+                              style="font-weight:normal;margin:0 5px;text-decoration:none;color:#fff;font-size:12.9px;letter-spacing:1.3px">
+                                <img src="" alt="" />
+                              </a>
+                              </span>
+                            </td>
 
-                <!-- content start -->
-                <table class="row">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td>
-
-                            <h1>Hi, Elijah Baily</h1>
-                						<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                						<img width="580" height="300" src="http://placehold.it/580x300">
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-                <table class="row callout">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td class="panel">
-
-                            <p>Phasellus dictum sapien a neque luctus cursus. Pellentesque sem dolor, fringilla et pharetra vitae. <a href="#">Click it! »</a></p>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-                <table class="row">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td>
-
-                            <h3>Title Ipsum <small>This is a note.</small></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-
-                <table class="row">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="three columns">
-                        <tr>
-                          <td>
-
-                            <table class="button">
-                              <tr>
-                                <td>
-                                  <a href="#">Click Me!</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-
-                <table class="row footer">
-                  <tr>
-                    <td class="wrapper">
-
-                      <table class="six columns">
-                        <tr>
-                          <td class="left-text-pad">
-
-                            <h5>Connect With Us:</h5>
-
-                            <table class="tiny-button facebook">
-                              <tr>
-                                <td>
-                                  <a href="#">Facebook</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                            <br>
-
-                            <table class="tiny-button twitter">
-                              <tr>
-                                <td>
-                                  <a href="#">Twitter</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                            <br>
-
-                            <table class="tiny-button google-plus">
-                              <tr>
-                                <td>
-                                  <a href="#">Google +</a>
-                                </td>
-                              </tr>
-                            </table>
-
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                    <td class="wrapper last">
-
-                      <table class="six columns">
-                        <tr>
-                          <td class="last right-text-pad">
-                            <h5>Contact Info:</h5>
-                            <p>Phone: 408.341.0600</p>
-                            <p>Email: <a href="mailto:hseldon@trantor.com">info@jdplc.com</a></p>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-
-                <table class="row">
-                  <tr>
-                    <td class="wrapper last">
-
-                      <table class="twelve columns">
-                        <tr>
-                          <td align="center">
-                            <center>
-                              <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Unsubscribe</a></p>
-                            </center>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-                <!-- container end below -->
+                            <td class="expander"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </center>
               </td>
             </tr>
           </table>
+          <!-- Footer JD Copyright text and JD logo branding -->
+          <table class="row" style="background:#000;color:#fff">
+            <tr>
+              <td class="center" align="center">
+                <center>
+                  <table class="container">
+                    <tr>
+                      <td class="wrapper last">
+                        <table class="twelve columns">
+                          <tr>
+                            <td style="text-align:center;vertical-align:middle;padding:11px 0;color:#fff">
+                                <center>
+                                    <img style="float:none" src="http://www.jdsports.co.uk/images/library/2015/12.01.2015/emaillogo.jpg" alt="JD Sports" border="0" />
+                                    <br />                                  
+                                    <span style="text-align:center;line-height:11.5px !important;font-size:11.5px;font-weight:normal;color:#fff">
+                                      You are receiving this e-mail because you have signed upto the JD Sports newsletter.<br>
+                                      We will not pass your details on to any third parties. JD Sports is a respected high street shop. If you wish to no longer receive emails from JD Sports please <a style="color:#fff;font-weight:bold;text-decoration:underline" title="Unsubscribe" target="_blank" href="%%unsub_center_url%%">unsubscribe</a>.<br /><br />
+                                      <span style="color:#666">JD Sports Fashion Plc, Edinburgh House, Hollinsbrook Way<br>Pilsworth, Bury, Lancashire, BL9 8RR<br />Copyright &copy; 2014 JD Sports Fashion Plc<br />All rights reserved.</span>
+                                    </span>
+                                </center>
+                            </td>
+                            <td class="expander"></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </center>
+              </td>
+            </tr>
+          </table> 
+          
+          
+          
+          
+    
+     
+          
+          
+          
 
         </center>
 			</td>
