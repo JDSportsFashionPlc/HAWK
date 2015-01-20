@@ -19,6 +19,7 @@ var Assets_home="<?=$Assets_home?>";
 var Pages_home="<?=$Pages_home?>";
 var Stats_home="<?=$Stats_home?>";
 var Settings_home="<?=$Settings_home?>";
+var BillBoard_home="<?=$BillBoard_home?>";
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>

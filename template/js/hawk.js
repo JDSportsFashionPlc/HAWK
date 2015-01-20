@@ -41,7 +41,7 @@ var hawkApp = angular.module('HAWK', ['ngSanitize']);
 	$scope.menu=[
 		{'name':'Home',		'link':Link_Home },
 		{'name':'Emails',		'link':Emails_home },
-		{'name':'Assets',		'link':Assets_home },
+		{'name':'BillBoard',		'link':BillBoard_home },
 		{'name':'Pages',		'link':Pages_home },
 		{'name':'Stats',		'link':Stats_home },
 		{'name':'Settings',	'link':Settings_home },

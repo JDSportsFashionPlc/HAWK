@@ -34,7 +34,8 @@ $Emails_link_bybuilder=$appURL.'page.php?page=emails-builder&id=';
 $Emails_link_bybuilderNew=$appURL.'page.php?page=emails-builder-new&id=';
 $Emails_link_bybuilderNewHAWKv1ProcessSystem=$appURL.'page.php?page=emails-builder-HAWKv1ProcessSystem&id=';
 
-
+// BILLBOARD
+$BillBoard_home=$appURL.'page.php?page=billboard';
 
 
 
