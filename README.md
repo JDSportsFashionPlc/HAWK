@@ -1,6 +1,11 @@
 # HAWK
----
-Dynamic content builder for marketing emails, FredHopper, pages, templates and content such as menus, sliders and galleries. This is to assist internal staff for the control over MESH, WebSphere Commerce and other systems like the blog.
+
+HAWK is a CMS for building: Emails, FredHoppers, Pages and Menus.
+
+ - BillBoard is the tool for FredHoppers
+ - HAWK is the tool for emails
+
+It works with MESH, ExactTarget and WebSphere.
 
 - JSON
 - JavaScript
@@ -11,4 +16,5 @@ Dynamic content builder for marketing emails, FredHopper, pages, templates and c
 - HTML5
 - AKAMAI
 - AWS
+- XML
 
