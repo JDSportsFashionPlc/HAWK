@@ -26,6 +26,8 @@ JD CSS
 */
 body, #backgroundTable{background:#eee;width:100%}
 body{font-family:Arial}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
 
 /*
 CENTRAL WRAPPER
@@ -56,6 +58,7 @@ DELIVERY BAR
 .deliverybar{background:#1083C7;color:#fff;line-height:19px;font-size:12.5px}
 .deliverybar strong{font-size:17px}
 .deliverybar span{display:block;margin:9px 0}
+.deliverybar a{display:block;color:#fff}
 
 /*
 CONTENT BLOCK 1x1
@@ -66,7 +69,7 @@ CONTENT BLOCK 1x1
 CONTENT BLOCK 1x1 WITH CTA
 */
 .contentBlock1x1withCTA a{display:block}
-.contentBlock1x1withCTA img{width:95%;border:0;text-align:center}
+.contentBlock1x1withCTA img{width:85%;border:0;text-align:center}
 .contentBlock1x1withCTA span{font-size:15px;display:block;margin:15px 0;line-height:25px}
 .contentBlock1x1withCTA strong{font-size:19px}
 
@@ -81,10 +84,9 @@ PLU BLOCK 2x2
 */
 .pluBlock2x2 td{width:50%}
 .pluBlock2x2 a{display:block;text-align:center}
-.pluBlock2x2 img{width:95%;border:0;text-align:center}
+.pluBlock2x2 img{width:85%;border:0;text-align:center}
 .pluBlock2x2 span{font-size:13px;display:block;margin:15px 0;line-height:23px}
 .pluBlock2x2 strong{font-size:17px}
-
 
 /*
 FOOTER
@@ -119,14 +121,14 @@ FOOTER
 				<table class="logonav fullwidthtable">
 				<tr>
 					<td>
-						<a href="{{faciaDomain}}">
+						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Header&utm_term=Logo">
 							<img src="http://www.jdsports.co.uk/images/library/2015/12.01.2015/emaillogo.jpg" alt="{{brandName}}" border="0"/>
 						</a>
 					</td>
 					<td align="right" class="top-nav-link-region">
-						<a href="{{faciaDomain}}" class="top-nav-links">Men</a>
-						<a href="{{faciaDomain}}" class="top-nav-links">Women</a>
-						<a href="{{faciaDomain}}" class="top-nav-links">Kids</a>
+						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Men" class="top-nav-links">Men</a>
+						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Women" class="top-nav-links">Women</a>
+						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Kids" class="top-nav-links">Kids</a>
 					</td>
 				</tr>
 				</table>
@@ -139,8 +141,10 @@ FOOTER
 						<td>
 							<center>
 								<span>
+									<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=FreeDeliveryBar">
 									<strong>FREE DELIVERY</strong>
 									<br />ON ALL ORDERS IN THE NEXT 24 HOURS
+									</a>
 								</span>
 							</center>
 						</td>
@@ -154,7 +158,7 @@ FOOTER
 					<tr>
 						<td>
 							<center>
-								<a href="{{faciaDomain}}">
+								<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1">
 									<img src="http://placehold.it/600x600"/>
 								</a>
 							</center>
@@ -169,7 +173,7 @@ FOOTER
 					<tr>
 						<td>
 							<center>
-								<a href="{{faciaDomain}}" style="color:#777">
+								<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1CTA" style="color:#777">
 									<br />
 									<img src="http://placehold.it/600x600"/>
 									<br />
@@ -190,7 +194,7 @@ FOOTER
 					<tr>
 						<td>
 							<center>
-								<a href="{{faciaDomain}}">
+								<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1wide">
 									<img src="http://placehold.it/600x300"/>
 								</a>
 							</center>
@@ -205,7 +209,7 @@ FOOTER
 					<tr>
 						<td>
 							<center>
-								<a href="{{faciaDomain}}" style="color:#777">
+								<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1withCTA" style="color:#777">
 									<br />
 									<img src="http://placehold.it/600x300"/>
 									<br />
@@ -225,12 +229,12 @@ FOOTER
 				<table class="contentBlock2x2 fullwidthtable">
 					<tr>
 						<td width="50%">
-							<a href="{{faciaDomain}}">
+							<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2A">
 								<img src="http://placehold.it/300x300?v=21"/>
 							</a>
 						</td>
 						<td width="50%">
-							<a href="{{faciaDomain}}">
+							<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2B">
 								<img src="http://placehold.it/300x300?v=21"/>
 							</a>
 						</td>
@@ -243,7 +247,7 @@ FOOTER
 				<table class="pluBlock2x2 fullwidthtable" bgcolor="#e1e1e1">
 					<tr>
 						<td width="50%">
-							<a href="{{faciaDomain}}" style="color:#777">
+							<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2ADetails" style="color:#777">
 								<img src="http://placehold.it/300x300?v=23"/>
 								<br />
 								<span>
@@ -254,7 +258,7 @@ FOOTER
 							</a>
 						</td>
 						<td width="50%">
-							<a href="{{faciaDomain}}" style="color:#777">
+							<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2BDetails" style="color:#777">
 								<img src="http://placehold.it/300x300?v=23"/>
 								<br />
 								<span>
@@ -278,7 +282,7 @@ FOOTER
 								<img src="http://www.jdsports.co.uk/images/library/2015/12.01.2015/emaillogo.jpg" alt="JD Sports" border="0" />
 								<br />
 								We will not pass your details on to any third parties.<br />
-								If you wish to no longer receive emails from JD Sports please <a href="{{UNSUBSCRIBE}}">unsubscribe</a><br /><br />
+								If you wish to no longer receive emails from JD Sports please <a href="{{UNSUBSCRIBE}}"><u>unsubscribe</u>.</a><br /><br />
 								<span>
 									JD Sports Fashion Plc, Edinburgh House, Hollinsbrook Way<br />Pilsworth, Bury, Lancashire, BL9 8RR<br />
 									Copyright &copy; 2014 JD Sports Fashion Plc<br />All rights reserved.
