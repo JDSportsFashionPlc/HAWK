@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width"/>
-<title>JD Sports Resposive Email Template - v1 - 2015</title>
+<title>JD Sports Resposive Email Template - v2 - 2015</title>
 <style>
 /***
 
@@ -16,56 +16,20 @@
 
 ***/
 
-/* RESET CSS */
-#outlook a{padding:0}body{width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0}
-.ExternalClass{width:100%}.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%} 
-#backgroundTable{margin:0;padding:0;width:100% !important;line-height:100% !important}img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic}
-a img{border:none}
-.image_fix{display:block}
-p{margin:1em 0}
-h1, h2, h3, h4, h5, h6{color:black !important}
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color:blue !important}
-h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active{color:red !important}
-h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited{color:purple !important}
-table td{border-collapse:collapse}
-table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;margin:0;padding:0}
-a{color:orange}
+/*
+RESET CSS
+*/
+#outlook a{padding:0}body{width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0}.ExternalClass{width:100%}.ExternalClass,.ExternalClass p,.ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%}#backgroundTable{margin:0;padding:0;width:100% !important;line-height:100% !important}img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic}a img{border:none}.image_fix{display:block}p{margin:1em 0}h1, h2, h3, h4, h5, h6{color:black !important}h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color:blue !important}h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active{color:red !important}h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited{color:purple !important}table td{border-collapse:collapse}table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;margin:0;padding:0}a{color:orange}
 
-/* MOBILE FIXES TO BE LEFT ALONE */
-@media only screen and (max-device-width:480px){
-	a[href^="tel"], a[href^="sms"]{
-		text-decoration:none;
-		color:black;
-		pointer-events:none;
-		cursor:default
-	}
-	.mobile_link a[href^="tel"], .mobile_link a[href^="sms"]{
-		text-decoration:default;
-		color:orange !important;
-		pointer-events:auto;
-		cursor:default
-	}
-}
-@media only screen and (min-device-width:768px) and (max-device-width:1024px){
-	a[href^="tel"], a[href^="sms"]{
-		text-decoration:none;
-		color:blue;
-		pointer-events:none;
-		cursor:default
-	}
-	.mobile_link a[href^="tel"], .mobile_link a[href^="sms"]{
-		text-decoration:default;
-		color:orange !important;
-		pointer-events:auto;
-		cursor:default
-	}
-}
-
-/* JD CSS */
+/*
+JD CSS
+*/
 body, #backgroundTable{background:#eee;width:100%}
 body{font-family:Arial}
 
-/* CENTRAL WRAPPER */
+/*
+CENTRAL WRAPPER
+*/
 .container{position:relative;margin:0 auto;width:750px}
 @media screen and (max-width:815px){.container{width:700px}}
 @media screen and (max-width:725px){.container{width:600px}}
@@ -74,34 +38,47 @@ body{font-family:Arial}
 @media screen and (max-width:575px){.container{width:500px}}
 @media screen and (max-width:550px){.container{width:100%}}
 
-/* LOGO/NAV */
-.logonav{background:#000;color:#fff;width:100%}
+/*
+CORE GLOBAL CSS
+*/
+.fullwidthtable{width:100%}
+
+/*
+LOGO/NAV
+*/
+.logonav{background:#000;color:#fff}
 .top-nav-link-region{text-align:right;vertical-align:middle}
 .top-nav-links{font-weight:normal;margin:0 5px;text-decoration:none;color:#fff;font-size:13.9px;letter-spacing:1.3px}
 
-/* DELIVERY BAR */
-.deliverybar{background:#1083C7;color:#fff;width:100%;line-height:19px;font-size:12.5px}
+/*
+DELIVERY BAR
+*/
+.deliverybar{background:#1083C7;color:#fff;line-height:19px;font-size:12.5px}
 .deliverybar strong{font-size:17px}
 .deliverybar span{display:block;margin:9px 0}
 
-/* CONTENT BLOCK 1x1 */
-.contentBlock1x1{width:100%}
+/*
+CONTENT BLOCK 1x1
+*/
 .contentBlock1x1 img{width:100%;border:0}
 
-/* CONTENT BLOCK 1x1 WITH CTA */
-.contentBlock1x1withCTA{width:100%}
+/*
+CONTENT BLOCK 1x1 WITH CTA
+*/
 .contentBlock1x1withCTA a{display:block}
 .contentBlock1x1withCTA img{width:95%;border:0;text-align:center}
 .contentBlock1x1withCTA span{font-size:15px;display:block;margin:15px 0;line-height:25px}
 .contentBlock1x1withCTA strong{font-size:19px}
 
-/* CONTENT BLOCK 2x2 */
-.contentBlock2x2{width:100%}
+/*
+CONTENT BLOCK 2x2
+*/
 .contentBlock2x2 td{width:50%}
 .contentBlock2x2 img{width:100%;border:0}
 
-/* PLU BLOCK 2x2 */
-.pluBlock2x2{width:100%}
+/*
+PLU BLOCK 2x2
+*/
 .pluBlock2x2 td{width:50%}
 .pluBlock2x2 a{display:block;text-align:center}
 .pluBlock2x2 img{width:95%;border:0;text-align:center}
@@ -109,8 +86,10 @@ body{font-family:Arial}
 .pluBlock2x2 strong{font-size:17px}
 
 
-/* FOOTER */
-.footer{width:100%;background:#000;color:#fff}
+/*
+FOOTER
+*/
+.footer{background:#000;color:#fff}
 .footer{text-align:center;line-height:17.5px;font-size:11.5px;font-weight:normal;color:#fff}
 .footer span{color:#666}
 .footer a{color:#fff}
@@ -137,7 +116,7 @@ body{font-family:Arial}
 				<!--
 				LOGO/NAV
 				-->
-				<table class="logonav">
+				<table class="logonav fullwidthtable">
 				<tr>
 					<td>
 						<a href="{{faciaDomain}}">
@@ -155,7 +134,7 @@ body{font-family:Arial}
 				<!--
 				DELIVERY BAR
 				-->
-				<table class="deliverybar">
+				<table class="deliverybar fullwidthtable">
 					<tr>
 						<td>
 							<center>
@@ -171,7 +150,7 @@ body{font-family:Arial}
 				<!--
 				CONTENT BLOCK 1x1
 				-->
-				<table class="contentBlock1x1">
+				<table class="contentBlock1x1 fullwidthtable">
 					<tr>
 						<td>
 							<center>
@@ -186,7 +165,7 @@ body{font-family:Arial}
 				<!--
 				CONTENT BLOCK 1x1 WITH CTA
 				-->
-				<table class="contentBlock1x1withCTA" bgcolor="#e1e1e1">
+				<table class="contentBlock1x1withCTA fullwidthtable" bgcolor="#e1e1e1">
 					<tr>
 						<td>
 							<center>
@@ -207,7 +186,7 @@ body{font-family:Arial}
 				<!--
 				CONTENT BLOCK 1x1 WIDE CTA
 				-->
-				<table class="contentBlock1x1">
+				<table class="contentBlock1x1 fullwidthtable">
 					<tr>
 						<td>
 							<center>
@@ -222,7 +201,7 @@ body{font-family:Arial}
 				<!--
 				CONTENT BLOCK 1x1 WIDE WITH CTA
 				-->
-				<table class="contentBlock1x1withCTA" bgcolor="#e1e1e1">
+				<table class="contentBlock1x1withCTA fullwidthtable" bgcolor="#e1e1e1">
 					<tr>
 						<td>
 							<center>
@@ -236,14 +215,14 @@ body{font-family:Arial}
 									</span>
 								</a>
 							</center>
-						</tr>
+						</td>
 					</tr>
 				</table>
 
 				<!--
 				CONTENT BLOCK 2x2
 				-->
-				<table class="contentBlock2x2">
+				<table class="contentBlock2x2 fullwidthtable">
 					<tr>
 						<td width="50%">
 							<a href="{{faciaDomain}}">
@@ -261,7 +240,7 @@ body{font-family:Arial}
 				<!--
 				PLU BLOCK 2x2
 				-->
-				<table class="pluBlock2x2" bgcolor="#e1e1e1">
+				<table class="pluBlock2x2 fullwidthtable" bgcolor="#e1e1e1">
 					<tr>
 						<td width="50%">
 							<a href="{{faciaDomain}}" style="color:#777">
@@ -291,11 +270,13 @@ body{font-family:Arial}
 				<!--
 				FOOTER
 				-->
-				<table class="footer">
+				<table class="footer fullwidthtable">
 					<tr>
 						<td>
 							<center>
-								<br /><img src="http://www.jdsports.co.uk/images/library/2015/12.01.2015/emaillogo.jpg" alt="JD Sports" border="0" /><br />
+								<br />
+								<img src="http://www.jdsports.co.uk/images/library/2015/12.01.2015/emaillogo.jpg" alt="JD Sports" border="0" />
+								<br />
 								We will not pass your details on to any third parties.<br />
 								If you wish to no longer receive emails from JD Sports please <a href="{{UNSUBSCRIBE}}">unsubscribe</a><br /><br />
 								<span>
