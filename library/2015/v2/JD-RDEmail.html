@@ -24,7 +24,7 @@ RESET CSS
 /*
 JD CSS
 */
-body, #backgroundTable{background:#eee;width:100%}
+body, #backgroundTable{background:#eaeaea;width:100%}
 body{font-family:Arial}
 a{text-decoration:none}
 a:hover{text-decoration:underline}
@@ -44,13 +44,23 @@ CENTRAL WRAPPER
 CORE GLOBAL CSS
 */
 .fullwidthtable{width:100%}
+.divider-top{display:block;width:100%;height:15px;border-top-left-radius:13px;border-top-right-radius:13px;background:#000}
+.divider-bottom{display:block;width:100%;height:15px;border-bottom-left-radius:13px;border-bottom-right-radius:13px;background:#000}
+.hide{display:none}
+
+/*
+WEB LINK
+*/
+.weblink a{text-decoration:none;font-size:11.7px;display:block;margin:9px}
+.weblink a:hover, .weblink a span:hover{text-decoration:none}
+.weblink a span{text-decoration:underline}
 
 /*
 LOGO/NAV
 */
 .logonav{background:#000;color:#fff}
 .top-nav-link-region{text-align:right;vertical-align:middle}
-.top-nav-links{font-weight:normal;margin:0 5px;text-decoration:none;color:#fff;font-size:13.9px;letter-spacing:1.3px}
+.top-nav-links{font-weight:normal;margin:0 5px;text-decoration:none;color:#fff;font-size:11.9px;letter-spacing:1.3px}
 
 /*
 DELIVERY BAR
@@ -94,7 +104,9 @@ FOOTER
 .footer{background:#000;color:#fff}
 .footer{text-align:center;line-height:17.5px;font-size:11.5px;font-weight:normal;color:#fff}
 .footer span{color:#666}
-.footer a{color:#fff}
+.footercopy, .footercopy span{color:#c1c1c1;font-size:11px;text-align:center}
+.footercopy a{color:#c1c1c1;text-decoration:underline}
+.footercopy a:hover{text-decoration:none}
 
 </style>
 
@@ -114,7 +126,22 @@ FOOTER
 		<table cellpadding="0" class="container" cellspacing="0" border="0" align="center">
 		<tr>
 			<td>
+
+				<!--
+				WEB LINK
+				-->
+				<table class="weblink fullwidthtable">
+				<tr>
+					<td>
+						<a href="{{WEBLINK}}">
+							<center>Problems viewing this email? See the <span>web version</span>.</center>
+						</a>
+					</td>
+				</tr>
+				</table>
 				
+				<span class="divider-top"></span>
+
 				<!--
 				LOGO/NAV
 				-->
@@ -126,9 +153,9 @@ FOOTER
 						</a>
 					</td>
 					<td align="right" class="top-nav-link-region">
-						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Men" class="top-nav-links">Men</a>
-						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Women" class="top-nav-links">Women</a>
-						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Kids" class="top-nav-links">Kids</a>
+						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Men" class="top-nav-links">MEN</a>
+						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Women" class="top-nav-links">WOMEN</a>
+						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Kids" class="top-nav-links">KIDS</a>
 					</td>
 				</tr>
 				</table>
@@ -278,21 +305,17 @@ FOOTER
 					<tr>
 						<td>
 							<center>
-								<br />
-								<img src="http://www.jdsports.co.uk/images/library/2015/12.01.2015/emaillogo.jpg" alt="JD Sports" border="0" />
-								<br />
-								We will not pass your details on to any third parties.<br />
-								If you wish to no longer receive emails from JD Sports please <a href="{{UNSUBSCRIBE}}"><u>unsubscribe</u>.</a><br /><br />
+								<br /><img src="http://www.jdsports.co.uk/images/library/2015/12.01.2015/emaillogo.jpg" alt="JD Sports" border="0" /><br />
 								<span>
 									JD Sports Fashion Plc, Edinburgh House, Hollinsbrook Way<br />Pilsworth, Bury, Lancashire, BL9 8RR<br />
 									Copyright &copy; 2014 JD Sports Fashion Plc<br />All rights reserved.
 								</span>
-								<br />
 							</center>
-							<br />
 						</td>
 					</tr>
-				</table>			
+				</table>
+
+				<span class="divider-bottom"></span>			
 
 			</td>
 		</tr>
@@ -301,12 +324,18 @@ FOOTER
 		END WRAPPER 
 		-->
 
+		<br />
+
+		<span class="footercopy"><center>If you wish to no longer receive emails from JD Sports please <a href="{{UNSUBSCRIBE}}">unsubscribe</a>.</center></span>
+
 	<!--
 	END WRAPPER
 	-->
 	</td>
 	</tr>
 	</table>
+
+	<br />
 
 
 </body>
