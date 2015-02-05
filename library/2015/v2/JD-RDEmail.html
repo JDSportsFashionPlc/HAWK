@@ -24,7 +24,7 @@ RESET CSS
 /*
 JD CSS
 */
-body, #backgroundTable{background:#eaeaea;width:100%}
+body, #backgroundTable{background:linear-gradient(to bottom, #999, #eaeaea);width:100%}
 body{font-family:Arial}
 a{text-decoration:none}
 a:hover{text-decoration:underline}
@@ -38,7 +38,7 @@ CENTRAL WRAPPER
 @media screen and (max-width:650px){.container{width:575px}}
 @media screen and (max-width:600px){.container{width:565px}}
 @media screen and (max-width:575px){.container{width:500px}}
-@media screen and (max-width:550px){.container{width:100%}}
+@media screen and (max-width:550px){.container{width:100%}.hidemobile{display:none}}
 
 /*
 CORE GLOBAL CSS
@@ -140,7 +140,7 @@ FOOTER
 				</tr>
 				</table>
 				
-				<span class="divider-top"></span>
+				<span class="divider-top hidemobile"></span>
 
 				<!--
 				LOGO/NAV
@@ -315,7 +315,7 @@ FOOTER
 					</tr>
 				</table>
 
-				<span class="divider-bottom"></span>			
+				<span class="divider-bottom hidemobile"></span>			
 
 			</td>
 		</tr>
@@ -337,6 +337,36 @@ FOOTER
 
 	<br />
 
+	<!--
+	TRACKING
+	-->
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
