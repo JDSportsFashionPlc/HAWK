@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width"/>
 <title>JD Sports Resposive Email Template - v2 - 2015</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css"/>
 <script src="hawk.js"></script>
 <style>
 /***
@@ -115,26 +117,34 @@ FOOTER
 </style>
 
 </head>
-<body>
+<body ng-controller="faciaNameCtrl">
 
 	<!--
 	ANGULARJS
 	-->
 	<style>
-		.WebFormEditableRegions{margin-top:15px;margin-bottom:15px;background:#fff;min-height:215px;padding:25px;border-radius:9px}
-		.graybox{background:#eaeaea;border:1px solid #ccc;padding:9px;margin:7px 0;min-width:250px}
-		.WebFormEditableRegions input{width:85%;height:21px;vertical-align:middle}
+	.WebFormEditableRegions{margin-top:15px;margin-bottom:15px;background:#fff;min-height:215px;padding:25px;border-radius:9px}
+	.graybox{background:#eaeaea;border:1px solid #ccc;padding:9px;margin:7px 0}
+	.WebFormEditableRegions input, .WebFormEditableRegions select{width:85%;font-size:1.1em;padding:1px;vertical-align:middle}
 	</style>
 	<div class="container">
 		<div class="WebFormEditableRegions removeFinal">
-		<span><strong>MAKE ADJUSTMENTS AS YOU NEED:</strong></span><br />
-		<div class="graybox">ENTER FACIA NAME:
-			<input ng-model="brandName" type="text" ng-init="brandName='JD Sports'"/></div>
-		<div class="graybox">ENTER THE NAME OF THE CAMPAIGN:
-			<input ng-model="faciaEmailCampaignName" ng-init="faciaEmailCampaignName='sample'" type="text"/>
-		</div>
-		<div class="graybox">ENTER THE NAME OF THE DOMAIN:
-			<input ng-model="faciaDomain" ng-init="faciaDomain='http://domain.ext/'" type="text"/></div>
+			
+			<h2><span><strong>HAWK v2</strong></span></h2>
+			
+			<div class="graybox">ENTER FACIA NAME:				
+				<select ng-model="myFacia" ng-options="facia.name for facia in facia">
+     				<option value="">-- choose facia --</option>
+    			</select>			
+			</div>
+			
+			<div class="graybox">ENTER THE NAME OF THE CAMPAIGN:
+				<input ng-model="faciaEmailCampaignName" ng-init="faciaEmailCampaignName='sample'" type="text"/>
+			</div>			
+			<div class="graybox">ENTER THE DATE OF THE CAMPAIGN:
+				<input ng-model="DDMMYY" ng-init="DDMMYY='DD-MM-YY'" class="inputDDMMYY" type="text"/>
+			</div>
+
 		</div>
 	</div>
 
@@ -173,14 +183,14 @@ FOOTER
 				<table class="logonav fullwidthtable">
 				<tr>
 					<td>
-						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Header&utm_term=Logo">
-							<img src="http://www.jdsports.co.uk/images/library/2015/12.01.2015/emaillogo.jpg" alt="{{brandName}}" border="0"/>
+						<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Header&utm_term=Logo">
+							<img src="http://www.jdsports.co.uk/images/library/2015/12.01.2015/emaillogo.jpg" alt="{{myFacia.name}}" border="0"/>
 						</a>
 					</td>
 					<td align="right" class="top-nav-link-region">
-						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Men" class="top-nav-links">MEN</a>
-						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Women" class="top-nav-links">WOMEN</a>
-						<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Kids" class="top-nav-links">KIDS</a>
+						<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Men" class="top-nav-links">MEN</a>
+						<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Women" class="top-nav-links">WOMEN</a>
+						<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=Kids" class="top-nav-links">KIDS</a>
 					</td>
 				</tr>
 				</table>
@@ -193,7 +203,7 @@ FOOTER
 						<td>
 							<center>
 								<span>
-									<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=FreeDeliveryBar">
+									<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Navigation&utm_term=FreeDeliveryBar">
 									<strong>FREE DELIVERY</strong>
 									<br />ON ALL ORDERS IN THE NEXT 24 HOURS
 									</a>
@@ -210,7 +220,7 @@ FOOTER
 					<tr>
 						<td>
 							<center>
-								<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1">
+								<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1">
 									<img src="http://placehold.it/600x600"/>
 								</a>
 							</center>
@@ -225,7 +235,7 @@ FOOTER
 					<tr>
 						<td>
 							<center>
-								<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1CTA" style="color:#777">
+								<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1CTA" style="color:#777">
 									<br />
 									<img src="http://placehold.it/600x600"/>
 									<br />
@@ -246,7 +256,7 @@ FOOTER
 					<tr>
 						<td>
 							<center>
-								<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1wide">
+								<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1wide">
 									<img src="http://placehold.it/600x300"/>
 								</a>
 							</center>
@@ -261,7 +271,7 @@ FOOTER
 					<tr>
 						<td>
 							<center>
-								<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1withCTA" style="color:#777">
+								<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=1x1withCTA" style="color:#777">
 									<br />
 									<img src="http://placehold.it/600x300"/>
 									<br />
@@ -281,12 +291,12 @@ FOOTER
 				<table class="contentBlock2x2 fullwidthtable">
 					<tr>
 						<td width="50%">
-							<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2A">
+							<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2A">
 								<img src="http://placehold.it/300x300?v=21"/>
 							</a>
 						</td>
 						<td width="50%">
-							<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2B">
+							<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2B">
 								<img src="http://placehold.it/300x300?v=21"/>
 							</a>
 						</td>
@@ -299,7 +309,7 @@ FOOTER
 				<table class="pluBlock2x2 fullwidthtable" bgcolor="#e1e1e1">
 					<tr>
 						<td width="50%">
-							<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2ADetails" style="color:#777">
+							<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2ADetails" style="color:#777">
 								<img src="http://placehold.it/300x300?v=23"/>
 								<br />
 								<span>
@@ -310,7 +320,7 @@ FOOTER
 							</a>
 						</td>
 						<td width="50%">
-							<a href="{{faciaDomain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DD-MM-YYYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2BDetails" style="color:#777">
+							<a href="{{myFacia.domain}}?utm_source=ExactTarget&utm_medium=Email&utm_campaign={{DDMMYY}}-{{faciaEmailCampaignName}}&utm_content=Content&utm_term=2x2BDetails" style="color:#777">
 								<img src="http://placehold.it/300x300?v=23"/>
 								<br />
 								<span>
@@ -368,6 +378,3 @@ FOOTER
 
 </body>
 </html>
-
-
-
