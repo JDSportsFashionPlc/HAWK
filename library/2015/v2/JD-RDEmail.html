@@ -24,7 +24,13 @@
 /*
 RESET CSS
 */
-#outlook a{padding:0}body{width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0}.ExternalClass{width:100%}.ExternalClass,.ExternalClass p,.ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{line-height:100%}#backgroundTable{margin:0;padding:0;width:100% !important;line-height:100% !important}img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic}a img{border:none}.image_fix{display:block}p{margin:1em 0}h1, h2, h3, h4, h5, h6{color:black !important}h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color:blue !important}h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active{color:red !important}h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited{color:purple !important}table td{border-collapse:collapse}table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;margin:0;padding:0}a{color:#000}
+#outlook a{padding:0}body{width:100% !important;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0}.
+ExternalClass{width:100%}.ExternalClass,.ExternalClass p,.ExternalClass span, .ExternalClass font,
+.ExternalClass td, .ExternalClass div{line-height:100%}#backgroundTable{margin:0;padding:0;width:100% !important;line-height:100% !important}img{outline:none;text-decoration:none;-ms-interpolation-mode:bicubic}
+a img{border:none}.image_fix{display:block}p{margin:1em 0}h1, h2, h3, h4, h5, h6{color:black !important}h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{color:blue !important}
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active{color:red !important}
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited{color:purple !important}
+table td{border-collapse:collapse}table{border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt;margin:0;padding:0}a{color:#000}
 
 /*
 JD CSS
@@ -139,7 +145,7 @@ FOOTER
 			</div>
 			
 			<div class="graybox">ENTER THE NAME OF THE CAMPAIGN:
-				<input ng-model="faciaEmailCampaignName" ng-init="faciaEmailCampaignName='sample'" type="text"/>
+				<input ng-model="faciaEmailCampaignName" ng-init="faciaEmailCampaignName='sample'" class="faciaCampaignName" value="sample" type="text"/>
 			</div>			
 			<div class="graybox">ENTER THE DATE OF THE CAMPAIGN:
 				<input ng-model="DDMMYY" ng-init="DDMMYY='DD-MM-YY'" class="inputDDMMYY" type="text"/>
@@ -355,10 +361,10 @@ FOOTER
 			</td>
 		</tr>
 		</table>
+
 		<!-- 
 		END WRAPPER 
 		-->
-
 		<br />
 
 		<span class="footercopy"><center>If you wish to no longer receive emails from JD Sports please <a href="{{UNSUBSCRIBE}}">unsubscribe</a>.</center></span>
