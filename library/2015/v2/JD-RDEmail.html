@@ -121,18 +121,21 @@ FOOTER
 	ANGULARJS
 	-->
 	<style>
-	.WebFormEditableRegions{margin:15px auto;background:#fff;width:750px;height:215px;padding:25px;border-radius:9px}
-	.graybox{background:#eaeaea;border:1px solid #ccc;padding:9px;margin:7px 0;min-width:250px}
+		.WebFormEditableRegions{margin-top:15px;margin-bottom:15px;background:#fff;min-height:215px;padding:25px;border-radius:9px}
+		.graybox{background:#eaeaea;border:1px solid #ccc;padding:9px;margin:7px 0;min-width:250px}
+		.WebFormEditableRegions input{width:85%;height:21px;vertical-align:middle}
 	</style>
-
-	<div class="WebFormEditableRegions removeFinal">
-	<span><strong>MAKE ADJUSTMENTS AS YOU NEED:</strong></span><br />
-	<div class="graybox">ENTER FACIA NAME:
-		<input ng-model="brandName" type="text" ng-init="brandName='JD Sports'" style="width:255px;height:21px;vertical-align:middle"/></div>
-	<div class="graybox">ENTER THE NAME OF THE CAMPAIGN:
-		<input ng-model="faciaEmailCampaignName" ng-init="faciaEmailCampaignName='sample'" type="text" style="width:255px;height:21px;vertical-align:middle"/></div>
-	<div class="graybox">ENTER THE NAME OF THE DOMAIN:
-		<input ng-model="faciaDomain" ng-init="faciaDomain='http://domain.ext/'" type="text" style="width:255px;height:21px;vertical-align:middle"/></div>
+	<div class="container">
+		<div class="WebFormEditableRegions removeFinal">
+		<span><strong>MAKE ADJUSTMENTS AS YOU NEED:</strong></span><br />
+		<div class="graybox">ENTER FACIA NAME:
+			<input ng-model="brandName" type="text" ng-init="brandName='JD Sports'"/></div>
+		<div class="graybox">ENTER THE NAME OF THE CAMPAIGN:
+			<input ng-model="faciaEmailCampaignName" ng-init="faciaEmailCampaignName='sample'" type="text"/>
+		</div>
+		<div class="graybox">ENTER THE NAME OF THE DOMAIN:
+			<input ng-model="faciaDomain" ng-init="faciaDomain='http://domain.ext/'" type="text"/></div>
+		</div>
 	</div>
 
 	<!--
