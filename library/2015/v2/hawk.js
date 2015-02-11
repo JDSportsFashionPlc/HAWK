@@ -23,7 +23,7 @@ var hawkApp = angular.module('HAWK', []);
 
 	// DATE INPUT
 		jQuery(document).ready(function() {
-			$('.inputDDMMYY').val(today)
+			$('.inputDDMMYY').val(today);
 		});
 
 	// DATE PICKER
@@ -40,6 +40,19 @@ var hawkApp = angular.module('HAWK', []);
 		];
 		// $scope.myFacia = $scope.facia[2];
 	}]);
+
+	function start(){
+		if( $('.WebFormEditableRegions select').val()==="-- choose facia --" ||
+			$('.WebFormEditableRegions select').val()==="" )
+		{
+			$('.WebFormEditableRegions select').addClass('errorformapps');
+			jQuery('.mainEmailTableWrapper').slideUp("slow");
+		} else {
+			$('.WebFormEditableRegions select').removeClass('errorformapps');
+			jQuery('.mainEmailTableWrapper').slideDown("slow");
+		}
+		
+	}
 
 // END APPLICATION
 // -- EOF and EOM __;
